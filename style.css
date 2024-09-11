@@ -20,7 +20,7 @@ main {
 
 .container {
     margin: 6.25rem auto;
-    height: 88vh;
+    height: 75vh;
     max-width: 25rem;
     padding: 1.25rem;
     background-color: hsl(0, 0%, 100%);
