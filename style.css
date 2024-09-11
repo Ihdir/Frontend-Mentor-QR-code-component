@@ -1,91 +1,65 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
 body {
-    height: 100%;
-    background-color: hsl(212, 45%, 89%);
-    font-family: 'Outfit';
+    margin: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(212, 45%, 89%);
 }
 
-main {
-    width: 100%;
-}
-
-.container {
-    margin: 6.25rem auto;
-    height: 75vh;
-    max-width: 25rem;
-    padding: 1.25rem;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-    text-align: left;
+.Element {
     display: flex;
     flex-direction: column;
-}
-
-.container_image {
-    height: 18.75rem;
-    width: 100%;
-}
-
-.container_image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0.625rem;
-}
-
-.container_text {
-    margin-top: 4.688rem;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 25rem; /* 400px */
+    height: auto; /* Let the height adjust automatically */
+    max-height: 43.75rem; /* 700px */
+    background-color: hsl(0, 0%, 100%);
+    padding: 1.5625rem; /* 25px */
     text-align: center;
+    margin: 0.625rem 0; /* 10px */
+    margin-bottom: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
+    overflow: auto; /* Handle overflow content */
 }
 
-.container_text h1 {
-    font-size: 1.875rem;
-    margin-bottom: 0.625rem;
+.Element img {
+    width: 100%;
+    margin-bottom: 1.25rem; /* 20px */
+    border-radius: 0.625rem; /* 10px */
+}
+
+h1 {
+    font-size: 2.1875rem; /* 35px */
     color: hsl(218, 44%, 22%);
 }
 
-.conatiner_text p {
-    font-size: 1rem;
-    margin-top: 1.25rem;
-}
-
-.attribution {
-    margin-top: 1.25rem;
-    text-align: center;
-    font-size: 1rem;
-    color: hsl(228, 45%, 44%);
+h2 {
+    font-size: 0.9375rem; /* 15px */
+    color: hsl(220, 15%, 55%);
 }
 
 /* Mobile Specific Styles */
-@media (max-width: 37.5rem) {
-    .container {
-        height: 60vh;
-        padding: 1.25rem;
-    }
-    
-    .container_image img {
-        width: 100%;
-        height: auto;
+@media (max-width: 37.5rem) { /* 600px */
+    .Element {
+        width: 90%; /* Ensure it fits well on smaller screens */
+        padding: 1.5625rem; /* Maintain padding for mobile */
+        margin: 0.625rem 0; /* Margin adjustment */
+        margin-bottom: 1.25rem; /* Margin adjustment */
     }
 
-    .container_text h1 {
-        font-size: 1.25rem;
-    }
-    
-    .container_text p {
-        font-size: 0.813rem;
+    h1 {
+        font-size: 1.25rem; /* 20px */
     }
 
-    .attribution {
-        font-size: 0.75rem;
+    h2 {
+        font-size: 0.625rem; /* 10px */
     }
 }
+
+
+
+
+
